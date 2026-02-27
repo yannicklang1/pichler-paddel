@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pichler Paddel – Allgemeine Geschäftsbedingungen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #1a3c2a;
+  --primary-deep: #0d1f16;
+  --primary-light: #2a5e40;
+  --accent: #4ade80;
+  --accent-bright: #22c55e;
+  --accent-glow: #86efac;
+  --off-white: #f6f9f7;
+  --anthracite: #1a2e23;
+  --white: #ffffff;
+  --gray-100: #eef3f0;
+  --gray-200: #dce5df;
+  --gray-300: #c4d1c9;
+  --gray-400: #7d9687;
+  --gray-600: #3d5a48;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+
+  --radius: 14px;
+  --radius-lg: 20px;
+  --shadow-card: 0 4px 24px rgba(26, 60, 42, 0.08);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--anthracite);
+  background: var(--off-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================== HEADER ===================== */
+.legal-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.legal-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gray-100);
+  text-decoration: none;
+  color: var(--primary);
+  transition: all 0.2s;
+}
+
+.legal-header a:hover {
+  background: var(--gray-200);
+}
+
+.legal-header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+
+/* ===================== CONTENT ===================== */
+.legal-content {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  width: 100%;
+}
+
+.legal-content h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-top: 36px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gray-100);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary-light);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.legal-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: var(--anthracite);
+}
+
+.legal-content a {
+  color: var(--accent-bright);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.legal-content a:hover {
+  color: var(--primary);
+}
+
+.legal-content ul, .legal-content ol {
+  margin: 8px 0 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.legal-content li {
+  margin-bottom: 4px;
+}
+
+.legal-content .placeholder {
+  background: var(--gray-100);
+  border: 1px dashed var(--gray-300);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.88rem;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+
+.legal-content .info-box {
+  background: var(--gray-100);
+  border-left: 3px solid var(--accent-bright);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 16px 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 20px;
+  font-size: 0.9rem;
+}
+
+.legal-content th,
+.legal-content td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.legal-content th {
+  background: var(--gray-100);
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.legal-content td {
+  color: var(--anthracite);
+}
+
+.last-updated {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: var(--primary-deep);
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.3);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: var(--accent-bright); }
+
+@media (max-width: 768px) {
+  .footer-inner { flex-direction: column; text-align: center; }
+  .legal-content h2 { font-size: 1.15rem; }
+  .legal-content table { font-size: 0.82rem; }
+  .legal-content th, .legal-content td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="legal-header">
+  <a href="index.html" title="Zurück zur Startseite">
+    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+  </a>
+  <h1>Allgemeine Geschäftsbedingungen</h1>
+</header>
+
+<!-- CONTENT -->
+<main class="legal-content">
+
+  <p class="last-updated">Stand: Februar 2026</p>
+
+  <h2>1. Geltungsbereich</h2>
+  <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Buchungen und Dienstleistungen, die über die Website pichler-paddel.at oder vor Ort bei Pichler Paddel, <span class="placeholder">[Straße Hausnummer]</span>, 1230 Wien, abgeschlossen werden.</p>
+  <p>Mit der Buchung eines Padel-Courts erkennst du diese AGB an. Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, wir stimmen ihrer Geltung ausdrücklich schriftlich zu.</p>
+
+  <h2>2. Vertragspartner</h2>
+  <p>
+    Pichler Paddel<br>
+    <span class="placeholder">[Vor- und Nachname des Inhabers/der Inhaberin]</span><br>
+    <span class="placeholder">[Straße Hausnummer]</span><br>
+    1230 Wien, Österreich<br>
+    E-Mail: <span class="placeholder">[office@pichler-paddel.at]</span><br>
+    UID-Nr.: <span class="placeholder">[ATU XXXXXXXX]</span>
+  </p>
+
+  <h2>3. Vertragsschluss</h2>
+  <p>Die Darstellung unserer Padel-Courts und Leistungen auf der Website stellt kein rechtlich bindendes Angebot dar, sondern eine Einladung zur Abgabe eines Angebots (invitatio ad offerendum).</p>
+  <ol>
+    <li>Durch das Absenden einer Buchung über unsere Website gibst du ein verbindliches Angebot zum Abschluss eines Mietvertrags über den gewählten Padel-Court ab.</li>
+    <li>Der Vertrag kommt zustande, wenn wir deine Buchung durch eine Bestätigungs-E-Mail annehmen.</li>
+    <li>Die Buchungsbestätigung enthält alle wesentlichen Vertragsinformationen (Court, Datum, Uhrzeit, Dauer, Preis).</li>
+  </ol>
+
+  <h2>4. Leistungen und Preise</h2>
+
+  <h3>4.1 Court-Miete</h3>
+  <table>
+    <thead>
+      <tr><th>Dauer</th><th>Off-Peak</th><th>Prime Time</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>60 Minuten</td><td>24 €</td><td>32 €</td></tr>
+      <tr><td>90 Minuten</td><td>33 €</td><td>44 €</td></tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Off-Peak:</strong> Montag bis Freitag, 08:00–16:00 Uhr<br>
+    <strong>Prime Time:</strong> Montag bis Freitag ab 16:00 Uhr, Samstag, Sonntag und Feiertage ganztags
+  </p>
+  <p>Alle Preise verstehen sich pro Court (bis 4 Spieler) und inklusive der gesetzlichen Umsatzsteuer.</p>
+
+  <h3>4.2 Zusatzleistungen</h3>
+  <ul>
+    <li>Schläger-Verleih: 5 € pro Schläger</li>
+    <li>Bälle: 6 € pro Dose (3 Bälle)</li>
+  </ul>
+
+  <h3>4.3 Preisänderungen</h3>
+  <p>Bereits bestätigte Buchungen sind von Preisänderungen nicht betroffen. Wir behalten uns vor, die Preise mit einer Ankündigungsfrist von mindestens 30 Tagen anzupassen.</p>
+
+  <h2>5. Zahlung</h2>
+  <p>Die Zahlung des Buchungsbetrags erfolgt bei Online-Buchung unmittelbar über unsere Website. Wir akzeptieren die auf der Buchungsseite angegebenen Zahlungsmethoden (z. B. Kreditkarte, PayPal).</p>
+  <p>Der Buchungsbetrag ist sofort fällig und wird bei Abschluss der Buchung eingezogen.</p>
+
+  <h2>6. Stornierung und Umbuchung</h2>
+
+  <h3>6.1 Kostenlose Stornierung</h3>
+  <p>Du kannst deine Buchung bis <strong>24 Stunden vor dem gebuchten Termin</strong> kostenlos stornieren. Nutze dafür den Stornierungslink in deiner Bestätigungs-E-Mail.</p>
+
+  <h3>6.2 Späte Stornierung</h3>
+  <p>Bei Stornierungen weniger als 24 Stunden vor dem Termin wird der <strong>volle Buchungsbetrag</strong> einbehalten, da der Court nicht mehr anderweitig vergeben werden kann.</p>
+
+  <h3>6.3 Nichterscheinen (No-Show)</h3>
+  <p>Erscheinst du nicht zum gebuchten Termin ohne vorherige Stornierung, wird der volle Buchungsbetrag einbehalten.</p>
+
+  <h3>6.4 Umbuchung</h3>
+  <p>Umbuchungen sind bis 24 Stunden vor dem ursprünglichen Termin kostenlos möglich, sofern der gewünschte neue Termin verfügbar ist. Umbuchungen werden wie eine Stornierung mit gleichzeitiger Neubuchung behandelt.</p>
+
+  <h3>6.5 Absage durch Pichler Paddel</h3>
+  <p>Müssen wir eine Buchung absagen (z. B. wegen Unwetter, technischer Defekte oder behördlicher Anordnungen), erhältst du den vollen Buchungsbetrag zurückerstattet oder kannst kostenfrei umbuchen. Weitergehende Ansprüche sind ausgeschlossen, sofern wir die Absage nicht zu vertreten haben.</p>
+
+  <h2>7. Widerrufsrecht (Fernabsatzvertrag)</h2>
+  <p>Da es sich bei Online-Buchungen um Fernabsatzverträge im Sinne des Fern- und Auswärtsgeschäfte-Gesetzes (FAGG) handelt, steht dir grundsätzlich ein gesetzliches Widerrufsrecht zu.</p>
+
+  <h3>7.1 Widerrufsbelehrung</h3>
+  <p>Du hast das Recht, binnen <strong>14 Tagen</strong> ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses (Buchungsbestätigung).</p>
+  <p>Um dein Widerrufsrecht auszuüben, musst du uns mittels einer eindeutigen Erklärung (z. B. per E-Mail an <span class="placeholder">[office@pichler-paddel.at]</span>) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren.</p>
+  <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest.</p>
+
+  <h3>7.2 Folgen des Widerrufs</h3>
+  <p>Wenn du den Vertrag widerrufst, haben wir dir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen 14 Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über deinen Widerruf bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das du bei der ursprünglichen Buchung eingesetzt hast.</p>
+
+  <h3>7.3 Erlöschen des Widerrufsrechts</h3>
+  <p>Das Widerrufsrecht erlischt vorzeitig, wenn wir die Dienstleistung vollständig erbracht haben und mit der Ausführung der Dienstleistung erst begonnen haben, nachdem du deine ausdrückliche Zustimmung dazu erteilt und gleichzeitig deine Kenntnis davon bestätigt hast, dass du dein Widerrufsrecht bei vollständiger Vertragserfüllung verlierst (§ 18 Abs. 1 Z 1 FAGG).</p>
+
+  <div class="info-box">
+    <strong>Hinweis:</strong> Du stimmst bei der Buchung ausdrücklich zu, dass die Dienstleistung (Bereitstellung des Padel-Courts zum gebuchten Zeitpunkt) vor Ablauf der Widerrufsfrist erbracht wird. Mit Beginn der Dienstleistung (gebuchter Spieltermin) erlischt dein Widerrufsrecht.
+  </div>
+
+  <h3>7.4 Muster-Widerrufsformular</h3>
+  <p>Wenn du den Vertrag widerrufen willst, kannst du folgendes Formular verwenden (nicht vorgeschrieben):</p>
+  <div class="info-box">
+    An: Pichler Paddel, <span class="placeholder">[Straße Hausnummer]</span>, 1230 Wien, <span class="placeholder">[office@pichler-paddel.at]</span><br><br>
+    Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung:<br><br>
+    Buchung vom: _______________<br>
+    Court / Datum / Uhrzeit: _______________<br>
+    Name des/der Verbraucher(s): _______________<br>
+    Anschrift des/der Verbraucher(s): _______________<br>
+    Datum: _______________<br>
+    Unterschrift (nur bei Mitteilung auf Papier): _______________<br><br>
+    (*) Unzutreffendes streichen.
+  </div>
+
+  <h2>8. Hausordnung und Verhaltensregeln</h2>
+  <ul>
+    <li>Das Betreten der Courts ist nur in sauberen Hallenschuhen (nicht-markierende Sohle) und angemessener Sportkleidung gestattet.</li>
+    <li>Der gebuchte Court ist pünktlich zu räumen – die nächste Reservierung beginnt zur vollen bzw. halben Stunde.</li>
+    <li>Rauchen und der Konsum von Alkohol oder illegalen Substanzen sind auf der gesamten Anlage untersagt.</li>
+    <li>Abfälle sind in den bereitgestellten Behältern zu entsorgen.</li>
+    <li>Den Anweisungen des Personals ist Folge zu leisten.</li>
+    <li>Bei Verstoß gegen die Hausordnung behalten wir uns das Recht vor, Spieler von der Anlage zu verweisen. In diesem Fall besteht kein Anspruch auf Rückerstattung des Buchungsbetrags.</li>
+  </ul>
+
+  <h2>9. Schläger-Verleih</h2>
+  <p>Verliehene Schläger sind nach der Spielzeit in demselben Zustand zurückzugeben, in dem sie ausgegeben wurden (normaler Spielverschleiß ausgenommen).</p>
+  <p>Bei Beschädigung oder Verlust eines Leihschlägers durch den Kunden wird der Wiederbeschaffungswert in Rechnung gestellt.</p>
+
+  <h2>10. Haftung</h2>
+
+  <h3>10.1 Haftung von Pichler Paddel</h3>
+  <p>Wir haften unbeschränkt für Schäden, die auf vorsätzlichem oder grob fahrlässigem Verhalten beruhen, sowie für Personenschäden.</p>
+  <p>Für leichte Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten. In diesem Fall ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt.</p>
+
+  <h3>10.2 Sportliche Aktivität</h3>
+  <p>Padel ist eine sportliche Aktivität, die mit einem gewissen Verletzungsrisiko verbunden ist. Die Teilnahme erfolgt auf eigenes Risiko. Pichler Paddel haftet nicht für Verletzungen, die aus der normalen sportlichen Betätigung resultieren.</p>
+
+  <h3>10.3 Mitgebrachte Gegenstände</h3>
+  <p>Für mitgebrachte Gegenstände (Schläger, Taschen, Wertgegenstände) übernehmen wir keine Haftung. Wir empfehlen, Wertgegenstände in den zur Verfügung gestellten Schließfächern aufzubewahren.</p>
+
+  <h3>10.4 Höhere Gewalt</h3>
+  <p>Bei Ereignissen höherer Gewalt (z. B. Unwetter, Stromausfall, behördliche Anordnungen, Pandemie-Maßnahmen) ist Pichler Paddel von der Leistungspflicht befreit. Bereits geleistete Zahlungen werden in diesem Fall vollständig erstattet.</p>
+
+  <h2>11. Datenschutz</h2>
+  <p>Informationen zur Verarbeitung deiner personenbezogenen Daten findest du in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+
+  <h2>12. Anwendbares Recht und Gerichtsstand</h2>
+  <p>Es gilt ausschließlich österreichisches Recht unter Ausschluss des UN-Kaufrechts (CISG) und der Verweisungsnormen des internationalen Privatrechts.</p>
+  <p>Gerichtsstand ist Wien. Für Verbraucher im Sinne des Konsumentenschutzgesetzes (KSchG) gilt der Gerichtsstand gemäß § 14 KSchG – du kannst auch am Gericht deines Wohnsitzes klagen.</p>
+
+  <h2>13. Online-Streitbeilegung</h2>
+  <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a></p>
+  <p>Für Fragen oder Beschwerden kannst du dich auch direkt an uns wenden (Kontaktdaten siehe § 2). Wir bemühen uns, Unstimmigkeiten einvernehmlich zu lösen.</p>
+
+  <h2>14. Salvatorische Klausel</h2>
+  <p>Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder werden, so wird dadurch die Wirksamkeit der übrigen Bestimmungen nicht berührt. Die unwirksame oder undurchführbare Bestimmung ist durch eine wirksame zu ersetzen, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>
+
+  <div class="info-box">
+    <strong>Hinweis:</strong> Felder mit grauem Hintergrund (<span class="placeholder">[...]</span>) sind Platzhalter und müssen vor der Veröffentlichung mit den tatsächlichen Unternehmensdaten ergänzt werden. Diese AGB dienen als Vorlage und ersetzen keine individuelle Rechtsberatung. Wir empfehlen, die AGB vor Veröffentlichung von einem Rechtsanwalt prüfen zu lassen.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-logo">Pichler Paddel</span>
+      <span class="footer-copy">&copy; 2026 Alle Rechte vorbehalten.</span>
+    </div>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

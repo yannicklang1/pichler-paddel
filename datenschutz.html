@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pichler Paddel – Datenschutzerklärung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #1a3c2a;
+  --primary-deep: #0d1f16;
+  --primary-light: #2a5e40;
+  --accent: #4ade80;
+  --accent-bright: #22c55e;
+  --accent-glow: #86efac;
+  --off-white: #f6f9f7;
+  --anthracite: #1a2e23;
+  --white: #ffffff;
+  --gray-100: #eef3f0;
+  --gray-200: #dce5df;
+  --gray-300: #c4d1c9;
+  --gray-400: #7d9687;
+  --gray-600: #3d5a48;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+
+  --radius: 14px;
+  --radius-lg: 20px;
+  --shadow-card: 0 4px 24px rgba(26, 60, 42, 0.08);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--anthracite);
+  background: var(--off-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================== HEADER ===================== */
+.legal-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.legal-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gray-100);
+  text-decoration: none;
+  color: var(--primary);
+  transition: all 0.2s;
+}
+
+.legal-header a:hover {
+  background: var(--gray-200);
+}
+
+.legal-header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+
+/* ===================== CONTENT ===================== */
+.legal-content {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  width: 100%;
+}
+
+.legal-content h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-top: 36px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gray-100);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary-light);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.legal-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: var(--anthracite);
+}
+
+.legal-content a {
+  color: var(--accent-bright);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.legal-content a:hover {
+  color: var(--primary);
+}
+
+.legal-content ul, .legal-content ol {
+  margin: 8px 0 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.legal-content li {
+  margin-bottom: 4px;
+}
+
+.legal-content .placeholder {
+  background: var(--gray-100);
+  border: 1px dashed var(--gray-300);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.88rem;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+
+.legal-content .info-box {
+  background: var(--gray-100);
+  border-left: 3px solid var(--accent-bright);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 16px 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 20px;
+  font-size: 0.9rem;
+}
+
+.legal-content th,
+.legal-content td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.legal-content th {
+  background: var(--gray-100);
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.legal-content td {
+  color: var(--anthracite);
+}
+
+.last-updated {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: var(--primary-deep);
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.3);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: var(--accent-bright); }
+
+@media (max-width: 768px) {
+  .footer-inner { flex-direction: column; text-align: center; }
+  .legal-content h2 { font-size: 1.15rem; }
+  .legal-content table { font-size: 0.82rem; }
+  .legal-content th, .legal-content td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="legal-header">
+  <a href="index.html" title="Zurück zur Startseite">
+    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+  </a>
+  <h1>Datenschutzerklärung</h1>
+</header>
+
+<!-- CONTENT -->
+<main class="legal-content">
+
+  <p class="last-updated">Stand: Februar 2026</p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
+  </p>
+  <p>
+    Pichler Paddel<br>
+    <span class="placeholder">[Vor- und Nachname]</span><br>
+    <span class="placeholder">[Straße Hausnummer]</span><br>
+    1230 Wien, Österreich<br>
+    E-Mail: <span class="placeholder">[office@pichler-paddel.at]</span><br>
+    Telefon: <span class="placeholder">[+43 XXX XXXXXXX]</span>
+  </p>
+
+  <h2>2. Übersicht der Verarbeitungen</h2>
+  <p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung unserer Website und unserer Dienstleistungen (Court-Buchung, Schläger-Verleih) erforderlich ist. Nachfolgend informieren wir dich über Art, Umfang und Zwecke der Datenverarbeitung.</p>
+
+  <h2>3. Rechtsgrundlagen</h2>
+  <p>Die Verarbeitung deiner Daten erfolgt auf Basis folgender Rechtsgrundlagen der DSGVO:</p>
+  <ul>
+    <li><strong>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung):</strong> Du hast deine Einwilligung für einen bestimmten Verarbeitungszweck erteilt (z. B. Newsletter, optionale Cookies).</li>
+    <li><strong>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung):</strong> Die Verarbeitung ist zur Erfüllung eines Vertrags erforderlich, z. B. wenn du einen Padel-Court buchst.</li>
+    <li><strong>Art. 6 Abs. 1 lit. c DSGVO (Rechtliche Verpflichtung):</strong> Die Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung erforderlich (z. B. steuerliche Aufbewahrungspflichten).</li>
+    <li><strong>Art. 6 Abs. 1 lit. f DSGVO (Berechtigtes Interesse):</strong> Die Verarbeitung ist zur Wahrung unserer berechtigten Interessen erforderlich, z. B. beim Betrieb und der Sicherheit unserer Website.</li>
+  </ul>
+
+  <h2>4. Welche Daten wir erheben</h2>
+
+  <h3>4.1 Court-Buchung</h3>
+  <table>
+    <thead>
+      <tr><th>Datenart</th><th>Zweck</th><th>Rechtsgrundlage</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Vor- und Nachname</td><td>Buchungsbestätigung, Identifikation</td><td>Art. 6 Abs. 1 lit. b</td></tr>
+      <tr><td>E-Mail-Adresse</td><td>Buchungsbestätigung, Stornierung</td><td>Art. 6 Abs. 1 lit. b</td></tr>
+      <tr><td>Telefonnummer</td><td>Rückfragen zur Buchung</td><td>Art. 6 Abs. 1 lit. b</td></tr>
+      <tr><td>Buchungsdetails (Datum, Uhrzeit, Court)</td><td>Abwicklung der Platzvermietung</td><td>Art. 6 Abs. 1 lit. b</td></tr>
+      <tr><td>Zahlungsinformationen</td><td>Zahlungsabwicklung (verarbeitet durch Zahlungsdienstleister)</td><td>Art. 6 Abs. 1 lit. b</td></tr>
+    </tbody>
+  </table>
+
+  <h3>4.2 Kontaktaufnahme</h3>
+  <p>Wenn du uns per E-Mail oder Telefon kontaktierst, verarbeiten wir die von dir mitgeteilten Daten (Name, E-Mail-Adresse, Inhalt der Anfrage) zur Bearbeitung deines Anliegens auf Basis von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).</p>
+
+  <h3>4.3 Server-Logfiles</h3>
+  <p>Beim Besuch unserer Website erhebt unser Hosting-Provider automatisch folgende Informationen in sogenannten Server-Logfiles:</p>
+  <ul>
+    <li>IP-Adresse (anonymisiert)</li>
+    <li>Datum und Uhrzeit des Zugriffs</li>
+    <li>Aufgerufene Seite / URL</li>
+    <li>Browsertyp und -version</li>
+    <li>Betriebssystem</li>
+    <li>Referrer-URL</li>
+  </ul>
+  <p>Die Verarbeitung erfolgt auf Basis von Art. 6 Abs. 1 lit. f DSGVO zur Sicherstellung eines reibungslosen Betriebs der Website und zur Erkennung und Abwehr von Angriffen.</p>
+
+  <h2>5. Zahlungsabwicklung</h2>
+  <p>Für die Abwicklung von Online-Zahlungen nutzen wir externe Zahlungsdienstleister. Dabei werden deine Zahlungsdaten direkt an den jeweiligen Anbieter übermittelt und dort verarbeitet. Wir selbst speichern keine vollständigen Kreditkarten- oder Bankdaten.</p>
+  <p>Eingesetzte Zahlungsdienstleister:</p>
+  <ul>
+    <li><strong>Stripe</strong> – Stripe Payments Europe Ltd., Dublin, Irland. Datenschutzerklärung: <a href="https://stripe.com/at/privacy" target="_blank" rel="noopener">stripe.com/at/privacy</a></li>
+    <li><strong>PayPal</strong> – PayPal (Europe) S.à r.l., Luxemburg. Datenschutzerklärung: <a href="https://www.paypal.com/at/webapps/mpp/ua/privacy-full" target="_blank" rel="noopener">paypal.com/at/privacy</a></li>
+  </ul>
+  <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p>
+
+  <h2>6. Cookies</h2>
+  <p>Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf deinem Endgerät gespeichert werden.</p>
+
+  <h3>6.1 Technisch notwendige Cookies</h3>
+  <p>Diese Cookies sind für den Betrieb der Website zwingend erforderlich und können nicht deaktiviert werden. Sie dienen z. B. der Speicherung deiner Sitzungsinformationen während des Buchungsvorgangs.</p>
+  <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).</p>
+
+  <h3>6.2 Analyse- und Marketing-Cookies</h3>
+  <p>Sofern wir Analyse- oder Marketing-Cookies einsetzen (z. B. Google Analytics), erfolgt dies ausschließlich mit deiner vorherigen ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO in Verbindung mit § 96 Abs. 3 TKG 2021.</p>
+  <p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Nutze dazu die Cookie-Einstellungen auf unserer Website oder lösche die Cookies in deinem Browser.</p>
+
+  <div class="info-box">
+    <strong>Aktueller Status:</strong> Derzeit setzen wir keine Analyse- oder Marketing-Cookies ein. Sollte sich dies ändern, werden wir diese Datenschutzerklärung aktualisieren und eine entsprechende Einwilligungsabfrage (Cookie-Banner) einblenden.
+  </div>
+
+  <h2>7. Speicherdauer</h2>
+  <table>
+    <thead>
+      <tr><th>Datenart</th><th>Speicherdauer</th><th>Begründung</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Buchungsdaten</td><td>Dauer der Geschäftsbeziehung + 7 Jahre</td><td>Steuerliche Aufbewahrungspflicht (§ 132 BAO)</td></tr>
+      <tr><td>Rechnungs-/Zahlungsdaten</td><td>7 Jahre ab Ende des Geschäftsjahres</td><td>§ 132 BAO, § 212 UGB</td></tr>
+      <tr><td>Kontaktanfragen</td><td>6 Monate nach Abschluss der Anfrage</td><td>Berechtigtes Interesse</td></tr>
+      <tr><td>Server-Logfiles</td><td>14 Tage</td><td>IT-Sicherheit</td></tr>
+      <tr><td>Cookie-Einwilligungen</td><td>1 Jahr</td><td>Nachweispflicht</td></tr>
+    </tbody>
+  </table>
+  <p>Nach Ablauf der jeweiligen Speicherdauer werden die Daten routinemäßig gelöscht, sofern sie nicht für die Vertragserfüllung oder aus gesetzlichen Gründen weiterhin benötigt werden.</p>
+
+  <h2>8. Empfänger deiner Daten</h2>
+  <p>Wir geben deine personenbezogenen Daten nur weiter, wenn dies für die Erfüllung unserer Dienstleistungen erforderlich ist:</p>
+  <ul>
+    <li><strong>Zahlungsdienstleister:</strong> Stripe, PayPal (Zahlungsabwicklung)</li>
+    <li><strong>Hosting-Provider:</strong> <span class="placeholder">[Name des Hosting-Anbieters]</span> (Webhosting, Server-Betrieb)</li>
+    <li><strong>Buchungssystem:</strong> <span class="placeholder">[Name des Anbieters, falls extern]</span> (Online-Buchungsverwaltung)</li>
+  </ul>
+  <p>Mit allen Auftragsverarbeitern haben wir Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO abgeschlossen.</p>
+
+  <h3>Datenübermittlung in Drittländer</h3>
+  <p>Soweit wir Dienstleister einsetzen, die Daten außerhalb des Europäischen Wirtschaftsraums (EWR) verarbeiten, erfolgt dies nur auf Basis geeigneter Garantien (z. B. EU-Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO oder Angemessenheitsbeschlüsse gemäß Art. 45 DSGVO).</p>
+
+  <h2>9. Deine Rechte</h2>
+  <p>Du hast nach der DSGVO folgende Rechte, die du jederzeit kostenlos gegenüber uns geltend machen kannst:</p>
+  <ul>
+    <li><strong>Auskunftsrecht (Art. 15 DSGVO):</strong> Du kannst Auskunft über deine bei uns gespeicherten personenbezogenen Daten verlangen.</li>
+    <li><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Sind deine Daten unrichtig oder unvollständig, kannst du deren Berichtigung verlangen.</li>
+    <li><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Du kannst die Löschung deiner Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</li>
+    <li><strong>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO):</strong> Du kannst die Einschränkung der Verarbeitung deiner Daten verlangen.</li>
+    <li><strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO):</strong> Du hast das Recht, deine Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</li>
+    <li><strong>Widerspruchsrecht (Art. 21 DSGVO):</strong> Du kannst der Verarbeitung deiner Daten jederzeit widersprechen, sofern die Verarbeitung auf Art. 6 Abs. 1 lit. f DSGVO beruht.</li>
+    <li><strong>Recht auf Widerruf der Einwilligung (Art. 7 Abs. 3 DSGVO):</strong> Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen.</li>
+  </ul>
+  <p>Zur Ausübung deiner Rechte genügt eine E-Mail an <span class="placeholder">[office@pichler-paddel.at]</span>.</p>
+
+  <h2>10. Beschwerderecht bei der Aufsichtsbehörde</h2>
+  <p>Wenn du der Ansicht bist, dass die Verarbeitung deiner personenbezogenen Daten gegen die DSGVO verstößt, hast du das Recht, eine Beschwerde bei der zuständigen Aufsichtsbehörde einzureichen:</p>
+  <p>
+    <strong>Österreichische Datenschutzbehörde</strong><br>
+    Barichgasse 40–42<br>
+    1030 Wien<br>
+    Telefon: +43 1 52 152-0<br>
+    E-Mail: dsb@dsb.gv.at<br>
+    Website: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>
+  </p>
+
+  <h2>11. Automatisierte Entscheidungsfindung</h2>
+  <p>Wir setzen keine automatisierte Entscheidungsfindung einschließlich Profiling gemäß Art. 22 DSGVO ein.</p>
+
+  <h2>12. Änderungen dieser Datenschutzerklärung</h2>
+  <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen unserer Datenverarbeitungen anzupassen. Die jeweils aktuelle Version findest du stets auf dieser Seite.</p>
+
+  <div class="info-box">
+    <strong>Hinweis:</strong> Felder mit grauem Hintergrund (<span class="placeholder">[...]</span>) sind Platzhalter und müssen vor der Veröffentlichung mit den tatsächlichen Unternehmensdaten ergänzt werden.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-logo">Pichler Paddel</span>
+      <span class="footer-copy">&copy; 2026 Alle Rechte vorbehalten.</span>
+    </div>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

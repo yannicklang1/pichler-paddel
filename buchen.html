@@ -595,6 +595,44 @@ body {
   background: var(--gray-200);
 }
 
+/* ===================== FOOTER ===================== */
+.booking-footer {
+  background: var(--primary-deep, #0d1f16);
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.booking-footer-copy {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+}
+
+.booking-footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.booking-footer-links a {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.booking-footer-links a:hover { color: var(--accent-bright); }
+
+@media (max-width: 480px) {
+  .booking-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /* ===================== RESPONSIVE ===================== */
 @media (min-width: 640px) {
   body {
@@ -677,6 +715,16 @@ body {
 
     <div class="slots-list" id="slotsList"></div>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="booking-footer">
+    <span class="booking-footer-copy">&copy; 2026 Pichler Paddel</span>
+    <div class="booking-footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+    </div>
+  </footer>
 
 </div>
 
