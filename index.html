@@ -239,16 +239,30 @@ body {
   overflow: hidden;
 }
 
-.hero-video {
+.hero-video,
+.hero-image {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  transition: opacity 1.2s ease;
 }
 
-/* Dark overlay over video for text readability */
+.hero-image {
+  opacity: 0;
+}
+
+.hero-image.active {
+  opacity: 1;
+}
+
+.hero-video.hidden {
+  opacity: 0;
+}
+
+/* Dark overlay over video/image for text readability */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -1153,9 +1167,10 @@ body {
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1612534847738-b3af9bc31f0c?w=1920&q=80&auto=format&fit=crop">
+  <video class="hero-video" id="heroVideo" autoplay muted playsinline>
     <source src="Padel_Tennis_Commercial_final.mp4" type="video/mp4">
   </video>
+  <img class="hero-image" id="heroImage" src="6052a6660260125600892e5e1bb74796.jpg" alt="Outdoor Padel Court bei Sonnenuntergang">
   <div class="hero-overlay"></div>
   <div class="hero-glow"></div>
   <div class="container hero-content">
@@ -1537,6 +1552,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ─── HERO VIDEO/IMAGE LOOP ───
+// Video plays → crossfade to static image (20s) → crossfade to video → repeat
+(function() {
+  const video = document.getElementById('heroVideo');
+  const image = document.getElementById('heroImage');
+  const IMAGE_DISPLAY_SECONDS = 20;
+
+  if (!video || !image) return;
+
+  // When video ends: crossfade to image, wait 20s, then play video again
+  video.addEventListener('ended', () => {
+    // Fade out video, fade in image
+    video.classList.add('hidden');
+    image.classList.add('active');
+
+    // After 20 seconds, crossfade back to video
+    setTimeout(() => {
+      video.currentTime = 0;
+      video.play();
+      video.classList.remove('hidden');
+      image.classList.remove('active');
+    }, IMAGE_DISPLAY_SECONDS * 1000);
+  });
+})();
 </script>
 
 </body>
