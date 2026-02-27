@@ -1,4 +1,4 @@
-# Pichler Paddel – Website-Konzept
+# Pichler Padel – Website-Konzept
 
 ## 1. Farbschema & Design-Stil
 
